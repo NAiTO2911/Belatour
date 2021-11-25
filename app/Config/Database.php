@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'ibbor',
+        'password' => '@Gaktaugwlupa0',
+        'database' => 'belatour',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
