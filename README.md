@@ -38,15 +38,13 @@
   <ol>
     <li><a href="#about">About</a></li>
     <li><a href="#solution">Solution</a></li>
-    <li><a href="#metrics">Metrics</a></li>
-    <li><a href="#deployment-steps">Deployment Steps</a></li>
   </ol>
 </details>
 
 ## About
 BELATOUR merupakan sebuah Business Platform yang bergerak di sektor pariwisata yang menyediakan layanan rekomendasi dan pemesanan tour hanya dalam genggaman tanpa perlu berpusing - pusing mencarinya sendiri. Platform ini menghubungkan antara Pihak Sekolah, Pihak Travel, dan juga Tour Guide.
 
-## Objective
+## Solution
 1. Platform dengan pilihan paket tour yang relevan.
 2. Tour yang Nyaman.
 3. Platform yang mampu menyediakan Tour Guide Professional.
