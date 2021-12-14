@@ -28,6 +28,14 @@
                         <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
                     </div>
                     <div class="mb-3">
+                        <label for="InputForUsername" class="form-label">Username</label>
+                        <input type="username" name="username" class="form-control"  id="InputForUsername" value="<?= set_value('username') ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputForPhoneNumber" class="form-label">Phone Number address</label>
+                        <input type="phone_number" name="phone_number" class="form-control" id="InputForPhoneNumber" value="<?= set_value('phone_number') ?>">
+                    </div>
+                    <div class="mb-3">
                         <label for="InputForPassword" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="InputForPassword">
                     </div>

@@ -28,8 +28,8 @@
                         <input type="password" name="password" class="form-control" id="InputForPassword">
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
-                    <h2>belum punya akun?</h2>
-                    <button type="submit" class="btn btn-primary">Register </button>
+                    <h5>belum punya akun?</h5>
+                    <a class="btn btn-primary" href="/register">register</a>
                 </form>
             </div>
              
