@@ -1,8 +1,10 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\UserModel;
- 
+
 class Register extends Controller
 {
     public function index()
@@ -16,7 +18,7 @@ class Register extends Controller
         echo view('register', $data);
         echo view('templates/footer');
     }
- 
+
     public function save()
     {
         //include helper form
@@ -25,13 +27,13 @@ class Register extends Controller
         $rules = [
             'name'          => 'required|min_length[3]|max_length[20]',
             'email'         => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.user_email]',
-            'userrname'     => 'required|min_length[3]|max_length[20]',
+            'username'     => 'required|min_length[3]|max_length[20]',
             'phone_number'  => 'required|min_length[10]|max_length[13]',
             'password'      => 'required|min_length[6]|max_length[200]',
             'confpassword'  => 'matches[password]'
         ];
-         
-        if($this->validate($rules)){
+
+        if ($this->validate($rules)) {
             $model = new UserModel();
             $data = [
                 'full_name'    => $this->request->getvar('name'),
@@ -42,11 +44,9 @@ class Register extends Controller
             ];
             $model->save($data);
             return redirect()->to('/login');
-        }else{
+        } else {
             $data['validation'] = $this->validator;
             echo view('register', $data);
         }
-         
     }
- 
 }
