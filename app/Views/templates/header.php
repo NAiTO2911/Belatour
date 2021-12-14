@@ -71,7 +71,7 @@
 								<li><a data-scroll-nav="5" href="#happy-clients">Testmonials</a></li>
 								<li><a data-scroll-nav="6" href="#get-connected">Contact Us</a></li>
 							</ul>
-							<a class="header-btn btn small colorful hover-dark" href="#">Login</a>
+							<a class="header-btn btn small colorful hover-dark" href="/login">Login</a>
 							<div class="mobile-menu-btn hamburger hamburger--slider">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
