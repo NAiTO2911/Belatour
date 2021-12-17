@@ -15,11 +15,15 @@ class UserModel extends Model
             'img_profile'];
     protected $createdField   = 'created_at';
 
-    public function getUser($id) {
-        return $this->db->table($this->table)->getWhere(['id_user' => $id])->getRowArray();
-    }
-
     public function insertUser($data) {
         return $this->db->table($this->table)->insert($data);
+    }
+
+    public function checkUser($id_user) {
+        $builder = $this->db->table($this->table);
+        $builder->where('username', $id_user)
+                ->orWhere('email', $id_user)
+                ->orWhere('phone_number', $id_user);
+        return $builder->get()->getRowArray();
     }
 }
