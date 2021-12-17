@@ -19,3 +19,7 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+
+/build
+.phpunit.result.cache
+.composer.json.swp

@@ -40,4 +40,11 @@ class Validation
     //--------------------------------------------------------------------
     // Rules
     //--------------------------------------------------------------------
+    public $user = [
+        'full_name'         => 'required',
+        'email'             => 'trim|required|valid_email|is_unique[user.email]',
+        'username'          => 'trim|required|is_unique[user.username]',
+        'phone_number'      => 'trim|required|numeric|is_unique[user.phone_number]',
+        'password'          => 'required'
+    ];
 }

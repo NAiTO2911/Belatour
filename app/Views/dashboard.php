@@ -14,9 +14,7 @@
 								<div class="col-md-8 col-md-offset-2">
 
 									<h2>Our great services</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
+									<p>There was not a detail left undone and our history trip was a wonderful experience for everyone. The flexibility, professionalism, and constant attention to detail was unmatched by any tour company have worked with us.</p>
 
 								</div><!-- .col-md-8 end -->
 							</div><!-- .row end -->
@@ -27,134 +25,24 @@
 					<div class="section-content">
 
 						<div class="container">
+							<!-- Three columns of text below the carousel -->
 							<div class="row">
-								<div class="col-md-12">
-
-									<ul class="os-tabs">
-										<li class="active"><i class="fa fa-plane"></i>Airline Tickets</li>
-										<li><i class="fa fa-globe"></i>Worldwide Tours</li>
-										<li><i class="fa fa-bank"></i>Hotel Reservation</li>
-										<li><i class="fa fa-heartbeat"></i>Medical Tours</li>
-									</ul><!-- .os-tabs end -->
-
-									<div class="row">
-
-										<ul class="os-tabs-content">
-											<li class="active">
-												<div class="col-md-7">
-
-													<h4>Airline Tickets</h4>
-													<p>
-														Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.
-													</p>
-													<ul class="list check-square">
-														<li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-														<li>Nulla mattis lacus pharetra aliquet porttitor.</li>
-														<li>Phasellus sodales ligula in odio facilisis, quis fermentum tellus dapibus.</li>
-														<li>Mauris vel massa id lacus iaculis accumsan at in augue.</li>
-														<li>Aenean convallis metus a ultricies pharetra.</li>
-													</ul><!-- .list.check-square end -->
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas magna non ligula interdum mollis. Nullam dui mauris, aliquam id luctus sit amet.
-													</p>
-												</div><!-- .col-md-7 end -->
-												<div class="col-md-5">
-
-													<div class="img-preview">
-														<img src="http://placehold.it/430x320" alt="">
-													</div><!-- .img-preview end -->
-
-
-												</div><!-- .col-md-5 end -->
-											</li>
-											<li>
-												<div class="col-md-7">
-
-													<h4>Worldwide Tours</h4>
-													<p>
-														Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.
-													</p>
-													<ul class="list check-square">
-														<li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-														<li>Nulla mattis lacus pharetra aliquet porttitor.</li>
-														<li>Phasellus sodales ligula in odio facilisis, quis fermentum tellus dapibus.</li>
-														<li>Mauris vel massa id lacus iaculis accumsan at in augue.</li>
-														<li>Aenean convallis metus a ultricies pharetra.</li>
-													</ul><!-- .list.check-square end -->
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas magna non ligula interdum mollis. Nullam dui mauris, aliquam id luctus sit amet.
-													</p>
-												</div><!-- .col-md-7 end -->
-												<div class="col-md-5">
-
-													<div class="img-preview">
-														<img src="http://placehold.it/430x320" alt="">
-													</div><!-- .img-preview end -->
-
-
-												</div><!-- .col-md-5 end -->
-											</li>
-											<li>
-												<div class="col-md-7">
-
-													<h4>Hotel Reservation</h4>
-													<p>
-														Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.
-													</p>
-													<ul class="list check-square">
-														<li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-														<li>Nulla mattis lacus pharetra aliquet porttitor.</li>
-														<li>Phasellus sodales ligula in odio facilisis, quis fermentum tellus dapibus.</li>
-														<li>Mauris vel massa id lacus iaculis accumsan at in augue.</li>
-														<li>Aenean convallis metus a ultricies pharetra.</li>
-													</ul><!-- .list.check-square end -->
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas magna non ligula interdum mollis. Nullam dui mauris, aliquam id luctus sit amet.
-													</p>
-												</div><!-- .col-md-7 end -->
-												<div class="col-md-5">
-
-													<div class="img-preview">
-														<img src="http://placehold.it/430x320" alt="">
-													</div><!-- .img-preview end -->
-
-
-												</div><!-- .col-md-5 end -->
-											</li>
-											<li>
-												<div class="col-md-7">
-
-													<h4>Medical Tours</h4>
-													<p>
-														Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.
-													</p>
-													<ul class="list check-square">
-														<li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-														<li>Nulla mattis lacus pharetra aliquet porttitor.</li>
-														<li>Phasellus sodales ligula in odio facilisis, quis fermentum tellus dapibus.</li>
-														<li>Mauris vel massa id lacus iaculis accumsan at in augue.</li>
-														<li>Aenean convallis metus a ultricies pharetra.</li>
-													</ul><!-- .list.check-square end -->
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas magna non ligula interdum mollis. Nullam dui mauris, aliquam id luctus sit amet.
-													</p>
-
-												</div><!-- .col-md-7 end -->
-												<div class="col-md-5">
-
-													<div class="img-preview">
-														<img src="http://placehold.it/430x320" alt="">
-													</div><!-- .img-preview end -->
-
-
-												</div><!-- .col-md-5 end -->
-											</li>
-										</ul><!-- .os-tabs-content end -->
-
-									</div><!-- .row end -->
-
-								</div><!-- .col-md-12 end -->
-							</div><!-- .row end -->
+								<div class="col-lg-4" style="text-align: center">
+									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-13.png" alt="Haven’t Survey? No Worries!" width="140" height="140">
+									<h3>Haven’t Survey? No Worries!</h3>
+									<p>Customer didn’t need to take survey before the tour held. BELATOUR will do it especially for you!</p>
+								</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4" style="text-align: center">
+									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-12.png" alt="Flexible Plan" width="140" height="140">
+									<h3>Flexible Plan</h3>
+									<p>With BELATOUR, customer can easily choose whatever the place, transportation, duration, and everything conveniently!</p>
+								</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4" style="text-align: center">
+									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-14.png" alt="Free Consultation 24/7" width="140" height="140">
+									<h3>Free Consultation 24/7</h3>
+									<p>No ideas where to go? You can ask our team to recommend the best choice for your tour absolutely for FREE!</p>
+								</div><!-- /.col-lg-4 -->
+							</div><!-- /.row -->
 						</div><!-- .container end -->
 
 					</div><!-- .section-content end -->
@@ -170,10 +58,8 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 
-									<h2>Most popular packages</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
+									<h2>Recommended Places to Go</h2>
+									<p>Here are the best places to travel in 2021 for your study tour. Our list of the best study tours includes historic sites, modern museums and nature classes.</p>
 
 								</div><!-- .col-md-8 end -->
 							</div><!-- .row end -->
@@ -193,7 +79,7 @@
 												<div class="slide">
 													<div class="box-preview">
 														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/popular-packages/img-1.jpg" alt=""></a>
+															<a href="#"><img src="<?php echo base_url() ?>/images/wisata/group.png" alt=""></a>
 														</div><!-- .box-img end -->
 														<div class="box-content">
 															<div class="rating">
@@ -203,12 +89,17 @@
 																<i class="fa fa-star"></i>
 																<i class="fa fa-star"></i>
 															</div><!-- .rating end -->
-															<h5><a href="#">Honeymoon</a></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
+															<h5><a href="#">Paket 4P Yogyakarta</a></h5>
+															<ul>
+																<li>Candi Borobudur</li>
+																<li>Taman Pintar Yogyakarta</li>
+																<li>Museum Dirgantara</li>
+																<li>Monumen Yogyakarta</li>
+															</ul><!-- .list.check-square end -->
 															<ul class="meta">
-																<li><i class="fa fa-map-marker"></i>World Wide</li>
-																<li><i class="fa fa-clock-o"></i>7 Days</li>
-																<li><i class="fa fa-usd"></i>2600</li>
+																<li><i class="fa fa-clock-o"></i>3 Days</li>
+																<li><i class="fa fa-usd"></i>Rp. 3.499.000.-</li>
+																<li><i class="fa fa-group"></i>60 Person</li>
 															</ul><!-- .meta end -->
 														</div><!-- .box-content end -->
 													</div><!-- .box-preview end -->
@@ -735,283 +626,8 @@
 
 				</div><!-- .parallax-section end -->
 
-				<!-- === Tour Guides =========== -->
-				<div id="tour-guide" class="flat-section tour-guide" data-scroll-index="4">
-
-					<div class="section-title">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-
-									<h2>Tour Guides</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
-
-								</div><!-- .col-md-8 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-title end -->
-
-					<div class="section-content">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-								
-									<div class="tour-guide-slider">
-										<ul class="owl-carousel">
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/tour-guide/img-1.jpg" alt=""></a>
-															<div class="overlay">
-																<ul class="social-icons">
-																	<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-																	<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-																	<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-																	<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-																</ul><!-- .social-icons end -->
-															</div><!-- .overlay end -->
-														</div><!-- .box-img end -->
-														<div class="box-content">
- 															<h5>Elias Hossain<span class="sub-title">Ocean guide</span></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/tour-guide/img-2.jpg" alt=""></a>
-															<div class="overlay">
-																<ul class="social-icons">
-																	<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-																	<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-																	<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-																	<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-																</ul><!-- .social-icons end -->
-															</div><!-- .overlay end -->
-														</div><!-- .box-img end -->
-														<div class="box-content">
- 															<h5>Ahmed Hamdy<span class="sub-title">Ocean guide</span></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/tour-guide/img-3.jpg" alt=""></a>
-															<div class="overlay">
-																<ul class="social-icons">
-																	<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-																	<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-																	<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-																	<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-																</ul><!-- .social-icons end -->
-															</div><!-- .overlay end -->
-														</div><!-- .box-img end -->
-														<div class="box-content">
- 															<h5>Eslam Samir<span class="sub-title">Ocean guide</span></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/tour-guide/img-4.jpg" alt=""></a>
-															<div class="overlay">
-																<ul class="social-icons">
-																	<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-																	<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-																	<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-																	<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-																</ul><!-- .social-icons end -->
-															</div><!-- .overlay end -->
-														</div><!-- .box-img end -->
-														<div class="box-content">
- 															<h5>Morad Hamdy<span class="sub-title">Sport guide</span></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/tour-guide/img-5.jpg" alt=""></a>
-															<div class="overlay">
-																<ul class="social-icons">
-																	<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-																	<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-																	<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-																	<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-																</ul><!-- .social-icons end -->
-															</div><!-- .overlay end -->
-														</div><!-- .box-img end -->
-														<div class="box-content">
- 															<h5>Lana Hassain<span class="sub-title">Photography</span></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-										</ul>
-									</div><!-- .tour-guide-slider end -->
-								
-								</div><!-- .col-md-12 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-content end -->
-
-				</div><!-- .flat-section end -->
-
-
-				<!-- === Happy Clients =========== -->
-				<div id="happy-clients" class="flat-section happy-clients" data-scroll-index="5">
-
-					<div class="section-title">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-
-									<h2>Happy Clients</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
-
-								</div><!-- .col-md-8 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-title end -->
-
-					<div class="section-content">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-								
-									<div class="testmonials-slider">
-										<ul class="owl-carousel">
-											<li>
-												<div class="slide">
-													<div class="testmonial-single">
-														<div class="ts-img">
-															<img src="images/files/sliders/testmonials/img-1.jpg" alt="">
-															<i class="fa fa-quote-left"></i>
-														</div><!-- .ts-img end -->
-														<div class="ts-content">
-															<span class="quote-sign-start">“</span>
-															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-															<span class="quote-sign-end">”</span>
-														</div><!-- .ts-content end -->
-														<div class="ts-person">
-															<i class="fa fa-user"></i>
-															Director of <a href="#">Traveltour.com</a>
-														</div><!-- .ts-person end -->
-													</div><!-- .testmonial-single -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="testmonial-single">
-														<div class="ts-img">
-															<img src="images/files/sliders/testmonials/img-2.jpg" alt="">
-															<i class="fa fa-quote-left"></i>
-														</div><!-- .ts-img end -->
-														<div class="ts-content">
-															<span class="quote-sign-start">“</span>
-															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-															<span class="quote-sign-end">”</span>
-														</div><!-- .ts-content end -->
-														<div class="ts-person">
-															<i class="fa fa-user"></i>
-															Director of <a href="#">Traveltour.com</a>
-														</div><!-- .ts-person end -->
-													</div><!-- .testmonial-single -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="testmonial-single">
-														<div class="ts-img">
-															<img src="images/files/sliders/testmonials/img-3.jpg" alt="">
-															<i class="fa fa-quote-left"></i>
-														</div><!-- .ts-img end -->
-														<div class="ts-content">
-															<span class="quote-sign-start">“</span>
-															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-															<span class="quote-sign-end">”</span>
-														</div><!-- .ts-content end -->
-														<div class="ts-person">
-															<i class="fa fa-user"></i>
-															Director of <a href="#">Traveltour.com</a>
-														</div><!-- .ts-person end -->
-													</div><!-- .testmonial-single -->
-												</div><!-- .slide end -->
-											</li>
-										</ul>
-									</div><!-- .testmonials-slider end -->
-
-									<div class="clients-slider">
-										<ul class="owl-carousel">
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="client-single"><img src="http://placehold.it/200x60" alt=""></div>
-												</div><!-- .slide end -->
-											</li>
-										</ul>
-									</div><!-- .clients-slider end -->
-								</div><!-- .col-md-12 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-content end -->
-
-				</div><!-- .flat-section end -->
-
 				<!-- === Get Connected =========== -->
-				<div id="get-connected" class="flat-section get-connected" data-scroll-index="6">
+				<div id="get-connected" class="flat-section get-connected" data-scroll-index="4">
 
 					<div class="section-title">
 

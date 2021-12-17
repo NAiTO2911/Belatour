@@ -67,9 +67,7 @@
 								<li><a data-scroll-nav="1" href="#our-services">Our Services</a></li>
 								<li><a data-scroll-nav="2" href="#our-adventures">Our Adventures</a></li>
 								<li><a data-scroll-nav="3" href="#best-events">Our Events</a></li>
-								<li><a data-scroll-nav="4" href="#tour-guide">Tour Guides</a></li>
-								<li><a data-scroll-nav="5" href="#happy-clients">Testmonials</a></li>
-								<li><a data-scroll-nav="6" href="#get-connected">Contact Us</a></li>
+								<li><a data-scroll-nav="4" href="#get-connected">Contact Us</a></li>
 							</ul>
 							<a class="header-btn btn small colorful hover-dark" href="/login">Login</a>
 							<div class="mobile-menu-btn hamburger hamburger--slider">
