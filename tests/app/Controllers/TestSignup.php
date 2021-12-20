@@ -48,7 +48,7 @@ class TestSignup extends CIUnitTestCase
     }
 
     // public function testIndex(){
-    //     $result = $this->call('post', site_url('auth/signup'), [
+    //     $result = $this->post('auth/signup', [
     //         'full_name' => 'Robby Akbar',
     //         'email' => 'robbyakbar@upi.edu',
     //         'username' => 'robbyakbar',

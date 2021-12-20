@@ -30,7 +30,7 @@ class TestLogin extends CIUnitTestCase
             'status' => 200,
             'error' => false,
             'data' => [
-                'id_user' => "1",
+                'id_user' => "221",
                 'email' => "robbyakbar@upi.edu",
                 'full_name' => "Robby Akbar"
             ]
