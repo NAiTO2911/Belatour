@@ -14,6 +14,7 @@ class Signup extends ResourceController
     {
         $validation =  \Config\Services::validation();
         helper('utils');
+        helper ('form');
 
         $id_user = guidv4();
 

@@ -7,10 +7,14 @@ class Login extends ResourceController
     
     protected $format       = 'json';
     protected $modelName    = 'App\Models\UserModel';
+
+    
  
-    public function index() {
+    public function login() {
         $validation =  \Config\Services::validation();
         
+        helper ('form');
+
         $id_user = $this->request->getPost('id_user');
         $password = $this->request->getPost('password');
         

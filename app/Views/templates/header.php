@@ -69,7 +69,7 @@
 								<li><a data-scroll-nav="3" href="#best-events">Our Events</a></li>
 								<li><a data-scroll-nav="4" href="#get-connected">Contact Us</a></li>
 							</ul>
-							<a class="header-btn btn small colorful hover-dark" href="/login">Login</a>
+							<a class="header-btn btn small colorful hover-dark" href="api/account/login">Login</a>
 							<div class="mobile-menu-btn hamburger hamburger--slider">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
