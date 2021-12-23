@@ -36,7 +36,7 @@ $routes->get('/login', 'Auth/Login::index');
 $routes->resource('api/wisata');
 $routes->resource('api/order');
 $routes->resource('auth/register');
-
+$routes->resource('api/paket');
 
 /*
  * --------------------------------------------------------------------

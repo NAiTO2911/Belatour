@@ -1,3 +1,4 @@
+<?php helper('utils'); ?>
 		<!-- Content
 		============================================= -->
 		<section id="content">
@@ -29,18 +30,18 @@
 							<div class="row">
 								<div class="col-lg-4" style="text-align: center">
 									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-13.png" alt="Haven’t Survey? No Worries!" width="140" height="140">
-									<h3>Haven’t Survey? No Worries!</h3>
-									<p>Customer didn’t need to take survey before the tour held. BELATOUR will do it especially for you!</p>
+									<h3>Haven't Survey? No Worries!</h3>
+									<p>Customer didn't need to take survey before the tour held. <b>BELATOUR</b> will do it especially for you!</p>
 								</div><!-- /.col-lg-4 -->
 								<div class="col-lg-4" style="text-align: center">
 									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-12.png" alt="Flexible Plan" width="140" height="140">
 									<h3>Flexible Plan</h3>
-									<p>With BELATOUR, customer can easily choose whatever the place, transportation, duration, and everything conveniently!</p>
+									<p>With <b>BELATOUR</b>, customer can easily choose whatever the place, transportation, duration, and everything conveniently!</p>
 								</div><!-- /.col-lg-4 -->
 								<div class="col-lg-4" style="text-align: center">
 									<img class="img-circle" src="<?php echo base_url() ?>/assets/images/files/portfolio/Ellipse-14.png" alt="Free Consultation 24/7" width="140" height="140">
 									<h3>Free Consultation 24/7</h3>
-									<p>No ideas where to go? You can ask our team to recommend the best choice for your tour absolutely for FREE!</p>
+									<p>No ideas where to go? You can ask our team to recommend the best choice for your tour absolutely for <b>FREE!</b></p>
 								</div><!-- /.col-lg-4 -->
 							</div><!-- /.row -->
 						</div><!-- .container end -->
@@ -50,7 +51,7 @@
 				</div><!-- .flat-section end -->
 
 				<!-- === Popular Packages =========== -->
-				<div id="popular-packages" class="flat-section popular-packages" data-scroll-index="1">
+				<div id="popular-packages" class="flat-section popular-packages">
 
 					<div class="section-title">
 
@@ -75,136 +76,42 @@
 
 									<div class="popular-packages-slider">
 										<ul class="owl-carousel">
+											<?php $fmt = new NumberFormatter('id_ID', NumberFormatter::CURRENCY );
+											foreach ($paket as $item) : ?>
 											<li>
 												<div class="slide">
 													<div class="box-preview">
 														<div class="box-img img-bg">
-															<a href="#"><img src="<?php echo base_url() ?>/images/wisata/group.png" alt=""></a>
+															<table width="100%" height="100%">
+																<tr height="50%">
+																	<td background="<?= base_url().'/images/wisata/'.$item['wisata'][0]['img_thumbnail'] ?>" style="background-size: cover; background-position: center;" width="50%"></td>
+																	<td background="<?= base_url().'/images/wisata/'.$item['wisata'][1]['img_thumbnail'] ?>" style="background-size: cover; background-position: center;" width="50%"></td>
+																</tr>
+																<tr height="50%">
+																	<td background="<?= base_url().'/images/wisata/'.$item['wisata'][2]['img_thumbnail'] ?>" style="background-size: cover; background-position: center;" width="50%"></td>
+																	<td background="<?= base_url().'/images/wisata/'.$item['wisata'][3]['img_thumbnail'] ?>" style="background-size: cover; background-position: center;" width="50%"></td>
+																</tr>
+															</table>
 														</div><!-- .box-img end -->
 														<div class="box-content">
 															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
+																<?= formatDurasi($item['durasi']) ?>&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o"></i>
 															</div><!-- .rating end -->
-															<h5><a href="#">Paket 4P Yogyakarta</a></h5>
+															<h5><a href="<?php echo base_url('paket/#') ?>"><?= $item['nama_paket'] ?></a></h5>
 															<ul>
-																<li>Candi Borobudur</li>
-																<li>Taman Pintar Yogyakarta</li>
-																<li>Museum Dirgantara</li>
-																<li>Monumen Yogyakarta</li>
+																<?php foreach ($item['wisata'] as $list) : ?>
+																<li><?= $list['nama_wisata'] ?></li>
+																<?php endforeach; ?>
 															</ul><!-- .list.check-square end -->
 															<ul class="meta">
-																<li><i class="fa fa-clock-o"></i>3 Days</li>
-																<li><i class="fa fa-usd"></i>Rp. 3.499.000.-</li>
-																<li><i class="fa fa-group"></i>60 Person</li>
+																<li><i class="fa fa-usd"></i><?= $fmt->formatCurrency($item['harga'], "IDR") ?></li>
+																<li><i class="fa fa-group"></i><?= $item['kuota'] ?> Person</li>
 															</ul><!-- .meta end -->
 														</div><!-- .box-content end -->
 													</div><!-- .box-preview end -->
 												</div><!-- .slide end -->
 											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/popular-packages/img-2.jpg" alt=""></a>
-														</div><!-- .box-img end -->
-														<div class="box-content">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div><!-- .rating end -->
-															<h5><a href="#">Mountain tour</a></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-															<ul class="meta">
-																<li><i class="fa fa-map-marker"></i>Alps</li>
-																<li><i class="fa fa-clock-o"></i>2 Days</li>
-																<li><i class="fa fa-usd"></i>1200</li>
-															</ul><!-- .meta end -->
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/popular-packages/img-3.jpg" alt=""></a>
-														</div><!-- .box-img end -->
-														<div class="box-content">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div><!-- .rating end -->
-															<h5><a href="#">Medical Tour</a></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-															<ul class="meta">
-																<li><i class="fa fa-map-marker"></i>China</li>
-																<li><i class="fa fa-clock-o"></i>10 Days</li>
-																<li><i class="fa fa-usd"></i>2300</li>
-															</ul><!-- .meta end -->
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/popular-packages/img-4.jpg" alt=""></a>
-														</div><!-- .box-img end -->
-														<div class="box-content">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div><!-- .rating end -->
-															<h5><a href="#">Adventures jungle</a></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-															<ul class="meta">
-																<li><i class="fa fa-map-marker"></i>Africa</li>
-																<li><i class="fa fa-clock-o"></i>4 Days</li>
-																<li><i class="fa fa-usd"></i>1600</li>
-															</ul><!-- .meta end -->
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
-											<li>
-												<div class="slide">
-													<div class="box-preview">
-														<div class="box-img img-bg">
-															<a href="#"><img src="images/files/sliders/popular-packages/img-5.jpg" alt=""></a>
-														</div><!-- .box-img end -->
-														<div class="box-content">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div><!-- .rating end -->
-															<h5><a href="#">Safari tour</a></h5>
-															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust.</p>
-															<ul class="meta">
-																<li><i class="fa fa-map-marker"></i>South Africa</li>
-																<li><i class="fa fa-clock-o"></i>12 Days</li>
-																<li><i class="fa fa-usd"></i>3100</li>
-															</ul><!-- .meta end -->
-														</div><!-- .box-content end -->
-													</div><!-- .box-preview end -->
-												</div><!-- .slide end -->
-											</li>
+											<?php endforeach; ?>
 										</ul>
 									</div><!-- .popular-packages-slider end -->
 
@@ -217,7 +124,7 @@
 				</div><!-- .flat-section end -->
 
 				<!-- === CTA Title 1 =========== -->
-				<div class="parallax-section cta-title" data-scroll-index="1" data-parallax-bg-img="img-16.jpg" data-stellar-background-ratio="0.2">
+				<div class="parallax-section cta-title" data-parallax-bg-img="img-16.jpg" data-stellar-background-ratio="0.2">
 
 					<div class="overlay-colored" data-bg-color="#000" data-bg-color-opacity="0.60"></div><!-- .overlay-colored end -->
 					<div class="section-inner">
@@ -233,7 +140,7 @@
 											<br>
 											<span class="colored">For Traveling and Tourism</span>
 										</h1>
-										<a class="btn colorful large hover-dark" href="#">Take Your Tour</a>
+										<a class="btn colorful large hover-dark" href="#our-tours">Setup Your Tour</a>
 
 									</div><!-- .col-md-8 end -->
 
@@ -246,8 +153,8 @@
 
 				</div><!-- .parallax-section end -->
 
-				<!-- === Our Adventures =========== -->
-				<div id="our-adventures" class="flat-section our-adventures" data-scroll-index="2">
+				<!-- === Our Tours =========== -->
+				<div id="our-tours" class="flat-section our-tours" data-scroll-index="2">
 
 					<div class="section-title">
 
@@ -255,10 +162,8 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 
-									<h2>Our Adventures</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
+									<h2>Our Tours</h2>
+									<p>Choose an existing tourist place, and customize your own school tour now. There are tourist attractions that we have categorized based on the type of tour.</p>
 
 								</div><!-- .col-md-8 end -->
 							</div><!-- .row end -->
@@ -275,10 +180,10 @@
 									
 									<ul class="portfolio-categories">
 										<li><a data-filter="*" class="active" href="#">All</a></li>
-										<li><a data-filter=".pi-world-tour" href="#">World Tour</a></li>
-										<li><a data-filter=".pi-ocean-tour" href="#">Ocean Tour</a></li>
-										<li><a data-filter=".pi-summer-trip" href="#">Summer Trip</a></li>
-										<li><a data-filter=".pi-sport-tour" href="#">Sport Tour</a></li>
+										<li><a data-filter=".pi-history-tour" href="#">Historical Places</a></li>
+										<li><a data-filter=".pi-education-tour" href="#">Educational Places</a></li>
+										<li><a data-filter=".pi-open-area" href="#">Open-Space Area</a></li>
+										<li><a data-filter=".pi-playground-area" href="#">Playground Area</a></li>
 									</ul>
 								
 								</div><!-- .col-md-12 end -->
@@ -312,125 +217,19 @@
 									<div class="col-md-12">
 							
 										<div class="portfolio-items">
-											<div class="portfolio-item pi-world-tour">
+											<?php foreach ($wisata as $item) : ?>
+											<div class="portfolio-item pi-<?= $item['kategori'] ?>">
 												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-1.jpg" alt="">
+													<img src="<?= base_url().'/images/wisata/'.$item['img_thumbnail'] ?>" alt="">
 												</div><!-- .preview end -->
 												<a class="overlay" href="#">
-													<i class="fa fa-file-text"></i>
 													<div class="overlay-inner">
-														<h5>Safari Tour</h5>
-														<h5 class="sub-title">World Tour / South Africa</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-												<div class="portfolio-single-link">
-								                    <a class="open-portfolio-single" href="portfolio-single-1.html"></a>
-								                </div><!-- end portfolio-single-link -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-sport-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-2.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay" href="#">
-													<i class="fa fa-file-text"></i>
-													<div class="overlay-inner">
-														<h5>Mountain Tour</h5>
-														<h5 class="sub-title">Sport Tour / Alps</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-												<div class="portfolio-single-link">
-								                    <a class="open-portfolio-single" href="portfolio-single-2.html"></a>
-								                </div><!-- end portfolio-single-link -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-summer-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-3.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay" href="#">
-													<i class="fa fa-file-text"></i>
-													<div class="overlay-inner">
-														<h5>Open Bus Tour</h5>
-														<h5 class="sub-title">Summer Tour</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-												<div class="portfolio-single-link">
-								                    <a class="open-portfolio-single" href="portfolio-single-3.html"></a>
-								                </div><!-- end portfolio-single-link -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-world-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-4.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay" href="#">
-													<i class="fa fa-file-text"></i>
-													<div class="overlay-inner">
-														<h5>Single Travel</h5>
-														<h5 class="sub-title">World Tour / England</h5>
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-												<div class="portfolio-single-link">
-								                    <a class="open-portfolio-single" href="portfolio-single-4.html"></a>
-								                </div><!-- end portfolio-single-link -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-summer-tour pi-summer-trip">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-5.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay lightbox-gallery" href="images/files/portfolio/lightbox/img-5.jpg">
-													<i class="fa fa-picture-o"></i>
-													<div class="overlay-inner">
-														<h5>Honeymoon</h5>
-														<h5 class="sub-title">Summer Tour</h5>														
+														<h5><?= $item['nama_wisata'] ?></h5>
+														<h5 class="sub-title"><?= $item['alamat'] ?></h5>
 													</div><!-- .overlay-inner end -->
 												</a><!-- .overlay end -->
 											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-ocean-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-6.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay lightbox-gallery" href="images/files/portfolio/lightbox/img-6.jpg">
-													<i class="fa fa-picture-o"></i>
-													<div class="overlay-inner">
-														<h5>Honeymoon</h5>
-														<h5 class="sub-title">Ocean Tour / Bahamas</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-sport-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-7.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay lightbox-gallery" href="images/files/portfolio/lightbox/img-7.jpg">
-													<i class="fa fa-picture-o"></i>
-													<div class="overlay-inner">
-														<h5>Football Tour</h5>
-														<h5 class="sub-title">Sport Tour / Uefa</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-											</div><!-- .portfolio-item -->
-											<div class="portfolio-item pi-ocean-tour">
-												<div class="preview img-bg">
-													<img src="images/files/portfolio/img-8.jpg" alt="">
-												</div><!-- .preview end -->
-												<a class="overlay lightbox-gallery" href="images/files/portfolio/lightbox/img-8.jpg">
-													<i class="fa fa-picture-o"></i>
-													<div class="overlay-inner">
-														<h5>Diving Tour</h5>
-														<h5 class="sub-title">Ocean Tour / Bahamas</h5>														
-													</div><!-- .overlay-inner end -->
-												</a><!-- .overlay end -->
-											</div><!-- .portfolio-item -->
-										</div><!-- .portfolio-items end -->
-									</div><!-- .col-md-12 end -->
-									<div class="col-md-12">
-									
-										<a href="#" class="loadmore-pi btn large colorful hover-dark" data-text-loading="Now Loading" data-text-loading-finished="No More!">
-											<span>Load More</span>
-											<div class="loader la-ball-clip-rotate la-sm">
-											    <div></div>
-											</div>
-										</a>
-									
+											<?php endforeach; ?>
 									</div><!-- .col-md-12 end -->
 								</div><!-- .row end -->
 							</div><!-- .container-fluid end -->		
@@ -441,8 +240,8 @@
 
 				</div><!-- .flat-section end -->
 
-				<!-- === Best Events =========== -->
-				<div id="best-events" class="flat-section best-events" data-scroll-index="3">
+				<!-- === About Us =========== -->
+				<div id="about-us" class="flat-section about-us" data-scroll-index="3">
 
 					<div class="section-title">
 
@@ -450,10 +249,8 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 
-									<h2>Our best events</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
+									<h2>About Us</h2>
+									<p><b>BELATOUR</b>, is here as a solution for booking tour packages in an easy and flexible way. With <b>BELATOUR</b>, traveling has become easier and also fun because the ordering process can be done in your hand!</p>
 
 								</div><!-- .col-md-8 end -->
 							</div><!-- .row end -->
@@ -465,247 +262,20 @@
 
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-globe"></i>
-											<h4>World Tours</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>World Tour</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-globe"></i>
-										</div><!-- .content-overlay end -->
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div class="event-box" style="text-align: center; padding-bottom: 24px;">
+										<img style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: 400dp" src="<?php echo base_url() ?>/images/belatour.png"/>
+										<h3>Belatour</h3>
+										Bebas pilih bis, Bis nya ber AC, Free WiFi, Bisa nge cas HP + Lepi
 									</div><!-- .event-box end -->
-
 								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-plane"></i>
-											<h4>Airline Tickets</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Airline Tickets</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-plane"></i>
-										</div><!-- .content-overlay end -->
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div class="event-box" style="text-align: center; padding-bottom: 24px;">
+										<img style="display: block; margin-left: auto; margin-right: auto; width: 68%; height: 700dp" src="<?php echo base_url() ?>/images/tourlain.png"/>
+										<h3>Tour Lain</h3>
+										Bis nya momgok, Tidak nyaman, Tidak sesuai ekspektasi
 									</div><!-- .event-box end -->
-
 								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-university"></i>
-											<h4>Hotel Reservation</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Hotel Reservation</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-university"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-safari"></i>
-											<h4>Adventure Tours</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Adventure Tours</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-safari"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-empire"></i>
-											<h4>Ocean Tour</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Ocean Tour</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-empire"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-dribbble"></i>
-											<h4>Sport Tour</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Sport Tour</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-dribbble"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-heartbeat"></i>
-											<h4>Medical Tours</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Medical Tours</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-heartbeat"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-									<div class="event-box">
-										<div class="content">
-											<i class="fa fa-angellist"></i>
-											<h4>Summer Tours</h4>
-										</div><!-- .content end -->
-										<div class="content-overlay">
-											<h5>Summer Tours</h5>
-											<p>Our program is make you enjoy & explore the life. we ‘ll be happy when see you and your family happy.</p>
-											<i class="fa fa-angellist"></i>
-										</div><!-- .content-overlay end -->
-									</div><!-- .event-box end -->
-
-								</div><!-- .col-md-3 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-content end -->
-
-				</div><!-- .flat-section end -->
-
-				<!-- === CTA Title 2 =========== -->
-				<div class="parallax-section cta-title title-2" data-scroll-index="3" data-parallax-bg-img="img-33.jpg" data-stellar-background-ratio="0.2">
-
-					<div class="overlay-colored" data-bg-color="#000" data-bg-color-opacity="0.50"></div><!-- .overlay-colored end -->
-					<div class="section-inner">
-
-						<div class="container">
-							<div class="row">
-								<div class="section-content">
-
-									<div class="col-md-8 col-md-offset-2">
-
-										<h1 class="title-big">
-											<span>Great Experiences</span>
-											<br>
-											<span class="colored">For Traveling and Tourism</span>
-										</h1>
-										<a class="video-btn lightbox-iframe" href="https://vimeo.com/45830194">
-											click the player to
-											<i class="fa fa-play"></i>
-											Watch The Overview
-										</a><!-- .video-btn end -->
-
-									</div><!-- .col-md-8 end -->
-
-								</div><!-- .section-content end -->
-
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-inner end -->
-
-				</div><!-- .parallax-section end -->
-
-				<!-- === Get Connected =========== -->
-				<div id="get-connected" class="flat-section get-connected" data-scroll-index="4">
-
-					<div class="section-title">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-
-									<h2>Get Connected</h2>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-									</p>
-
-								</div><!-- .col-md-8 end -->
-							</div><!-- .row end -->
-						</div><!-- .container end -->
-
-					</div><!-- .section-title end -->
-
-					<div class="section-content">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6">
-
-									<div class="connect-box">
-										<h5>get in touch</h5>
-										<p>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been standard. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-										</p>
-										<ul class="social-icons">
-											<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a class="si-behance" href="#"><i class="fa fa-behance"></i></a></li>
-											<li><a class="si-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-										</ul><!-- .social-icons end -->
-									</div><!-- .connect-box end -->
-									<div class="connect-box">
-										<div class="contact-info-box">
-											<h5>Our Address</h5>
-											<ul class="contact-info">
-												<li><i class="fa fa-map-marker"></i>1234 Address name. City Name</li>
-												<li><i class="fa fa-phone"></i>(123) 456-7890</li>
-												<li><i class="fa fa-envelope"></i>mail@example.com</li>
-											</ul><!-- .contact-info end -->											
-										</div><!-- .contact-info-box end -->
-										<div class="contact-info-box">
-											<h5>Business Hours</h5>
-											<ul class="contact-info">
-												<li><i class="fa fa-clock-o"></i><span>Mon. - Fri.</span>8am to 5pm</li>
-												<li><i class="fa fa-clock-o"></i><span>Sat.</span>8am to 11am</li>
-												<li><i class="fa fa-clock-o"></i><span>Sun.</span>Closed</li>
-											</ul><!-- .contact-info end -->											
-										</div><!-- .contact-info-box end -->
-									</div><!-- .connect-box end -->
-								</div><!-- .col-md-6 end -->
-								<div class="col-md-6">
-
-									<div class="connect-box">
-										<h5>Drop Your Message</h5>
-										<div class="cf-notifications">
-											<div class="cf-notifications-cont"></div>
-										</div><!-- end Contact Form Submit Message -->
-										<form id="contact-form">
-											<div class="form-group">
-												<input type="text" name="cfName" id="cfName" class="form-control" placeholder="Your Name">
-											</div><!-- .form-group end -->
-											<div class="form-group">
-												<input type="text" name="cfEmail" id="cfEmail" class="form-control" placeholder="Your Email">
-											</div><!-- .form-group end -->
-											<div class="form-group">
-												<textarea  name="cfMessage" id="cfMessage" class="form-control" placeholder="Your Message"></textarea>
-											</div><!-- .form-group end -->
-											<div class="form-group">
-												<input type="submit" class="form-control" value="Send">
-											</div><!-- .form-group end -->
-										</form><!-- #contact-form end -->
-									</div><!-- .connect-box end -->
-								</div><!-- .col-md-6 end -->
 							</div><!-- .row end -->
 						</div><!-- .container end -->
 

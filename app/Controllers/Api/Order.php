@@ -19,21 +19,15 @@ class Order extends ResourceController
     public function show($id = null)
     {
         $model = new OrderModel();
+        helper('utils');
+
         $data = $model->getDetailOrder(['id_order' => $id]);
         if($data){
-            $data['durasi'] = $this->formatDurasi($data['durasi']);
+            $data['durasi'] = formatDurasi($data['durasi']);
             return $this->respond($data);
         }else{
             return $this->failNotFound('No Data Found with id '.$id);
         }
-    }
-
-    public function formatDurasi($durasi){
-        $hari = $durasi/24;
-        $malam = 0;
-        if ($durasi%24 > 0) $malam += 1;
-        $text = (int)$hari . " Hari " . ((int)$hari + $malam) . " Malam";
-        return $text;
     }
  
 }

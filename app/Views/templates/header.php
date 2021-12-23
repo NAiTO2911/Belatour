@@ -65,11 +65,11 @@
 							<ul id="main-menu" class="main-menu">
 								<li><a data-scroll-nav="0" href="#home">Home</a></li>
 								<li><a data-scroll-nav="1" href="#our-services">Our Services</a></li>
-								<li><a data-scroll-nav="2" href="#our-adventures">Our Adventures</a></li>
-								<li><a data-scroll-nav="3" href="#best-events">Our Events</a></li>
-								<li><a data-scroll-nav="4" href="#get-connected">Contact Us</a></li>
+								<li><a data-scroll-nav="2" href="#our-tours">Our Tours</a></li>
+								<li><a data-scroll-nav="3" href="#about-us" class="current">About Us</a></li>
 							</ul>
 							<a class="header-btn btn small colorful hover-dark" href="/login">Login</a>
+							<a class="header-btn btn small whiteful hover-dark" href="/signup">Signup</a>
 							<div class="mobile-menu-btn hamburger hamburger--slider">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
@@ -92,7 +92,7 @@
 
 				<div class="banner-slider">
 					<ul class="owl-carousel slider-img-bg">
-						<?php $no=1; foreach ($banner as $item) : ?>
+						<?php foreach ($banner as $item) : ?>
 						<li>
 							<div class="overlay-colored" data-bg-color="#000" data-bg-color-opacity="0.50"></div><!-- .overlay-colored end -->
 							<div class="overlay-pattern" data-bg-color="#000" data-bg-color-opacity="0"></div><!-- .overlay-pattern end -->

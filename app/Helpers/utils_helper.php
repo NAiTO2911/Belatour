@@ -41,3 +41,11 @@ function sendMailVerification($receiver, $full_name, $activation_code) {
         return $email->printDebugger(['headers']);
     }
 }
+
+function formatDurasi($durasi){
+    $hari = $durasi/24;
+    $malam = 0;
+    if ($durasi%24 > 0) $malam += 1;
+    $text = (int)$hari . " Hari " . ((int)$hari + $malam) . " Malam";
+    return $text;
+}
