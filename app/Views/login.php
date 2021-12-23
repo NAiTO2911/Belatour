@@ -9,35 +9,68 @@
  
     <title>Login</title>
   </head>
-  <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
- 
-            <div class="col-6">
-                <h1>Sign In</h1>
-                <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
-                <?php endif;?>
-                <form action="/login/auth" method="post">
-                    <div class="mb-3">
-                        <label for="InputForUsername" class="form-label">Username</label>
-                        <input type="username" name="username" class="form-control" id="InputForUsername" value="<?= set_value('Username') ?>">
+  <body class="login-page sidebar-collapse">
+    <div class="page-header header-filter" style="background-image: url('<?php echo base_url() ?>/assets/img/bg-literasi.png'); background-repeat: no-repeat; background-size: contain; background-position: center bottom;">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+            <div class="card card-login text-right" style="min-height: 275px;">
+                <form class="form" method="post" action="<?php echo base_url() ?>/instansi/login">
+                <div class="card-header card-header-primary text-center">
+                    <h4 class="card-title">Masuk</h4><div></div>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="material-icons">user_id</i>
+                        </span>
                     </div>
-                    <div class="mb-3">
-                        <label for="InputForPassword" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="InputForPassword">
+                    <input type="user_id" class="form-control" name="user_id" placeholder="user_id...">
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                    <h5>belum punya akun?</h5>
-                    <a class="btn btn-primary" href="/register">register</a>
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="material-icons">lock_outline</i>
+                        </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" placeholder="Password...">
+                    </div>
+                    <p class="card-text ">Belum punya akun? <a href="signup">Daftar sekarang</a></p>
+                </div>
+                <div class="footer text-center">
+                    <input type="submit" class="btn btn-primary btn-link btn-wd btn-lg" value="Ayo masuk!">
+                </div>
                 </form>
             </div>
-             
+            </div>
+        </div>
+        <?php
+        use Config\Services;
+            $session = Services::session();
+            $errors = $session->getFlashdata('errors');
+            if (isset($errors)) {
+            echo '<div class="alert alert-danger">
+            <div class="container">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                </button>
+            <ul>';
+            foreach ($errors as $error) :
+                echo '<li>'.esc($error).'</li>';
+            endforeach;
+            echo '</ul>
+            </div></div>';
+            } else {
+            echo $session->getFlashdata('msg');
+            }
+        ?>
         </div>
     </div>
-     
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  </body>
+    <!--   Core JS Files   -->
+    <script src="<?php echo base_url() ?>/assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>/assets/js/plugins/moment.min.js"></script>
+    </body>
 </html>
