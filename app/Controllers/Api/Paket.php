@@ -16,7 +16,8 @@ class Paket extends ResourceController
     }
 
     public function show($id = null){
-
+        $data = $this->model->getPaket($id);
+        return $this->showResponse($data);
     }
  
     public function showResponse($data) {

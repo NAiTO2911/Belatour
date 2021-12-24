@@ -9,7 +9,7 @@ class Dashboard extends BaseController {
     
     public function index() {
         $bannerModel = new BannerModel();
-        $mData['banner'] =  $bannerModel->findAll();
+        $data['banner'] =  $bannerModel->findAll();
 
         $paketModel = new PaketModel();
         $data['paket'] = $paketModel->getPaket();
@@ -17,7 +17,7 @@ class Dashboard extends BaseController {
         $wisataModel = new WisataModel();
         $data['wisata'] = $wisataModel->findAll();
 
-        echo view('templates/header', $mData);
+        echo view('templates/header');
 		echo view('dashboard', $data);
 		echo view('templates/footer');
 	}

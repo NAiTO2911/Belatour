@@ -25,7 +25,7 @@ $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
- * Route Definitions
+ * Route Definitions=
  * --------------------------------------------------------------------
  */
 
@@ -37,6 +37,8 @@ $routes->resource('api/wisata');
 $routes->resource('api/order');
 $routes->resource('auth/register');
 $routes->resource('api/paket');
+$routes->get('paket/(:num)', 'Paket::show/$1');
+$routes->get('paket/order/(:num)', 'Paket::order/$1');
 
 /*
  * --------------------------------------------------------------------

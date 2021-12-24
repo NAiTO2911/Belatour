@@ -62,27 +62,29 @@
 					<div class="row">
 						<div class="col-md-12">
 
-							<a class="logo" href="#">
+							<a class="logo" href="<?php echo base_url() ?>">
 								<img src="<?php echo base_url() ?>/assets/images/files/logo.png" alt="">
 								<h5><span class="colored">Travel</span> Tour</h5>
 								<span>Landing Template</span>
 							</a><!-- .logo end -->
 
 							<ul id="main-menu" class="main-menu">
-								<li><a data-scroll-nav="0" href="#home">Home</a></li>
-								<li><a data-scroll-nav="1" href="#our-services">Our Services</a></li>
-								<li><a data-scroll-nav="2" href="#our-tours">Our Tours</a></li>
-								<li><a data-scroll-nav="3" href="#about-us">About Us</a></li>
+								<li><a href="<?php echo base_url() ?>/dashboard#home">Home</a></li>
+								<li><a href="<?php echo base_url() ?>/dashboard#our-services" <?php if ($menu == "Paket") echo 'class="current"'?>>Our Services</a></li>
+								<li><a href="<?php echo base_url() ?>/dashboard#our-tours">Our Tours</a></li>
+								<li><a href="<?php echo base_url() ?>/dashboard#about-us">About Us</a></li>
 							</ul>
+
 <?php
 $this->session = \Config\Services::session();
 if (!$this->session->has('loggedIn')) { ?>
 	<a class="header-btn btn small colorful hover-dark" href="#" id="myBtn">Login</a>
-	<a class="header-btn btn small whiteful hover-dark" href="/signup">Signup</a>
+	<?php if ($menu != "Signup") echo '<a class="header-btn btn small whiteful hover-dark" href="/signup">Signup</a>'?>
 <?php } else {?>
 	<a class="header-btn" href="#"><?= $this->session->get('username'); ?></a>
 <?php }
 ?>
+
 							<div class="mobile-menu-btn hamburger hamburger--slider">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>

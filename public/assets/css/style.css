@@ -9552,6 +9552,24 @@ table tbody tr td:nth-child(2) img {
   text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #fff;
 }
+.btn.purply {
+  background: #4D47C3;
+  color: #fff;
+  text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-color: #4D47C3;
+}
+.btn.greenly {
+  background: #12DB00;
+  color: #fff;
+  text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-color: #12DB00;
+}
+.btn.browny {
+  background: #B89A00;
+  color: #fff;
+  text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-color: #B89A00;
+}
 .btn.transparent-colorful {
   background: transparent;
   color: #0084FF;

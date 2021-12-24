@@ -8,14 +8,13 @@ class Login extends ResourceController
     protected $format       = 'json';
     protected $modelName    = 'App\Models\UserModel';
 
-    
- 
-    public function login() {
+    public function index() {
         $validation =  \Config\Services::validation();
+        $this->session = \Config\Services::session();
         
-        helper ('form');
+        helper('form');
 
-        $id_user = $this->request->getPost('id_user');
+        $id_user = $this->request->getPost('username');
         $password = $this->request->getPost('password');
         
         $data_login = [
@@ -37,10 +36,16 @@ class Login extends ResourceController
                 if(password_verify($password, $getUser['password'])) {
                     $error = false;
                     $msg = [
-                        'id_user' => $getUser['id_user'],
+                        'id_user' => $getUser['username'],
                         'email' => $getUser['email'],
                         'full_name' => $getUser['full_name']
                     ];
+                    $data = array(
+                        'username' => $getUser['username'],
+                        'hak_akses' => 777,
+                        'loggedIn' => true
+                        );
+                    $this->session->set($data);
                 } else {
                     $error = true;
                     $msg = ['message' => 'Your Password is Wrong'];
@@ -59,7 +64,8 @@ class Login extends ResourceController
                     'data' => $msg
                 ];
             }
-            return $this->respond($response, $code);
+            return redirect()->to(base_url('dashboard'));
+            #return $this->respond($response, $code);
         }
     }
     

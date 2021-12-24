@@ -1,4 +1,46 @@
 <?php helper('utils'); ?>
+		<!-- Slider
+		============================================= -->
+		<section id="banner">
+
+			<div id="home" class="banner-parallax" data-scroll-index="0">
+
+				<div class="banner-slider">
+					<ul class="owl-carousel slider-img-bg">
+						<?php foreach ($banner as $item) : ?>
+						<li>
+							<div class="overlay-colored" data-bg-color="#000" data-bg-color-opacity="0.50"></div><!-- .overlay-colored end -->
+							<div class="overlay-pattern" data-bg-color="#000" data-bg-color-opacity="0"></div><!-- .overlay-pattern end -->
+							<div class="slide">
+								<img src="<?php echo base_url() ?>/assets/images/banner/<?= $item['img_banner'] ?>" alt="<?= $item['title'] ?>">
+								<div class="slide-content">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2">
+
+												<div class="banner-center-box text-center">
+													<h1>
+														<?php $title = explode("|",$item['title']); ?>
+														<?= $title[0] ?><br><span class="colored"><?= $title[1] ?></span>
+													</h1>
+													<div class="description"><?= $item['description'] ?></div>
+													<a class="btn colorful large hover-dark" href="#our-services">Eplore More</a>
+												</div><!-- .banner-center-box end -->
+
+											</div><!-- .col-md-12 end -->
+										</div><!-- .row end -->
+									</div><!-- .container end -->
+								</div><!-- .slide-content end -->
+							</div><!-- .slide end -->
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</div><!-- .banner-slider end -->
+
+			</div><!-- .banner-parallax end -->
+
+		</section><!-- #banner end -->
+
 		<!-- Content
 		============================================= -->
 		<section id="content">
@@ -97,7 +139,7 @@
 															<div class="rating">
 																<?= formatDurasi($item['durasi']) ?>&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o"></i>
 															</div><!-- .rating end -->
-															<h5><a href="<?php echo base_url('paket/#') ?>"><?= $item['nama_paket'] ?></a></h5>
+															<h5><a href="<?php echo base_url('paket').'/'.$item['id_paket'] ?>"><?= $item['nama_paket'] ?></a></h5>
 															<ul>
 																<?php foreach ($item['wisata'] as $list) : ?>
 																<li><?= $list['nama_wisata'] ?></li>

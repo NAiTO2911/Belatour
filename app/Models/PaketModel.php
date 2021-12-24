@@ -8,12 +8,17 @@ class PaketModel extends Model
     protected $primaryKey = 'id_paket';
     protected $allowedFields = ['nama_paket','durasi', 'kuota', 'harga', 'from_kab'];
 
-    public function getPaket()
+    public function getPaket($id = false)
     {
         $query = $this->db->table($this->table)
             ->select('paket.id_paket, paket.nama_paket, paket.durasi, paket.kuota, paket.harga, kabupaten.nama')
-            ->join('kabupaten', 'kabupaten.id_kab = paket.from_kab', 'inner')
-            ->get();
+            ->join('kabupaten', 'kabupaten.id_kab = paket.from_kab', 'inner');
+
+        if($id === false){
+            $query = $query->get();
+        } else {
+            $query = $query->where('paket.id_paket', $id)->get();
+        } 
         
         $data = [];
         foreach ($query->getResultArray() as $key=>$row) {
@@ -32,7 +37,7 @@ class PaketModel extends Model
 
     public function getWisataByIdPaket($id = false) {
         return $this->db->table('paket_wisata')
-            ->select('wisata.id_wisata, wisata.nama_wisata, wisata.img_thumbnail')
+            ->select('wisata.id_wisata, wisata.nama_wisata, wisata.alamat, wisata.img_thumbnail')
             ->join('wisata', 'wisata.id_wisata = paket_wisata.id_wisata', 'inner')
             ->where('paket_wisata.id_paket', $id)
             ->get()->getResultArray();

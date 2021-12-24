@@ -1,57 +1,56 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
- 
-    <title>Register</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
- 
-            <div class="col-6">
-                <h1>Sign Up</h1>
-                <?php if(isset($validation)):?>
-                    <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
-                <?php endif;?>
-                <form action="/register/save" method="post">
-                    <div class="mb-3">
-                        <label for="InputForName" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="InputForName" value="<?= set_value('name') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForEmail" class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForUsername" class="form-label">Username</label>
-                        <input type="username" name="username" class="form-control"  id="InputForUsername" value="<?= set_value('username') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForPhoneNumber" class="form-label">Phone Number address</label>
-                        <input type="phone_number" name="phone_number" class="form-control" id="InputForPhoneNumber" value="<?= set_value('phone_number') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForPassword" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="InputForPassword">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForConfPassword" class="form-label">Confirm Password</label>
-                        <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </form>
-            </div>
-             
-        </div>
-    </div>
-     
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  </body>
-</html>
+        <!-- Content
+		============================================= -->
+		<section id="content">
+
+            <div id="content-wrap">
+
+                <!-- === Detail Paket =========== -->
+				<div class="container">
+							<!-- Three columns of text below the carousel -->
+							<div class="row" style="padding: 16px;">
+
+                                <div class="col-sm-4">
+                                    <h2>Sign Up</h2>
+                                    <p>To use your account properly.</p>
+
+                                    <form action="/auth/signup" method="post">
+                                        <div class="input-group" style="margin-bottom: 8px;">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input id="full_name" type="text" class="form-control" name="full_name" placeholder="Full Name">
+                                        </div>
+                                        <div class="input-group" style="margin-bottom: 8px;">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                            <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="input-group" style="margin-bottom: 8px;">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+                                        </div>
+                                        <div class="input-group" style="margin-bottom: 8px;">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                            <input id="phone_number" type="number" class="form-control" name="phone_number" placeholder="Phone Number">
+                                        </div>
+                                        <div class="input-group" style="margin-bottom: 8px;">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        </div>
+                                        <input type="submit" class="btn small purply hover-dark" style="width: 100%;" value="Register"/>
+                                    </form>
+                                </div>
+                            
+                                <div class="col-sm-8">
+                                    <p>Already have an account?</p>
+                                    <a href="/login">Login Here!</a><br>
+
+                                    <img style="display: block; padding: 32px; margin-left: auto; margin-right: auto; width: 80%; height: 700dp" src="<?php echo base_url() ?>/images/bus.png"/>
+
+                                    <b>Pro Tip:</b>
+                                    <p>New Jetbus 3+ Super Double Decker (SDD)<br>can carry up to 75 Person.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+            </div><!-- #content-wrap -->
+
+		</section><!-- #content end -->
